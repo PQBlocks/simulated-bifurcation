@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pqblocks-bifurcation"
+version = "0.1.0"
+description = "Simulated Bifurcation (ballistic and discrete) heuristic solver for Ising and QUBO problems. Quantum-inspired classical optimization, not cryptography."
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+requires-python = ">=3.11"
+authors = [{name = "The PQBlocks Authors"}]
+keywords = ["simulated-bifurcation", "ising", "qubo", "combinatorial-optimization", "quantum-inspired", "heuristic", "max-cut", "numba"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+dependencies = ["numba", "numpy", "scipy"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/PQBlocks/simulated-bifurcation"
+Documentation = "https://github.com/PQBlocks/simulated-bifurcation#readme"
+Source = "https://github.com/PQBlocks/simulated-bifurcation"
+Changelog = "https://github.com/PQBlocks/simulated-bifurcation/blob/main/CHANGELOG.md"
+Issues = "https://github.com/PQBlocks/simulated-bifurcation/issues"
+Security = "https://github.com/PQBlocks/simulated-bifurcation/security/policy"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,979 @@
+{
+  "card_version": "1.0.0",
+  "algorithm": "pqblocks-bifurcation",
+  "timestamp": "2026-07-11T07:11:19.014758Z",
+  "generator_command": "PYTHONPATH=. python bench/run_benchmark.py",
+  "hardware_fingerprint": {
+    "cpu": "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+    "gpu": null,
+    "threads_allocated": 8
+  },
+  "benchmark_config": {
+    "num_runs_per_instance": 100,
+    "master_seed": 42,
+    "bootstrap_iterations": 10000,
+    "warmup_runs": 1
+  },
+  "instances": {
+    "brute_force_n5": {
+      "SB-bSB": {
+        "card_version": "1.0.0",
+        "metadata": {
+          "solver_id": "sb-bsb",
+          "solver_name": "SB-bSB",
+          "hardware": {
+            "cpu": "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+            "gpu": null,
+            "threads_allocated": 8
+          },
+          "parameters": {
+            "num_sweeps": 1000,
+            "num_reads": 1,
+            "dt": 0.5,
+            "c0": 0.5347478819909496
+          }
+        },
+        "benchmark_suite": {
+          "suite_name": "pqblocks-bifurcation-golden",
+          "instance_id": "brute_force_n5",
+          "num_variables": 5,
+          "num_edges": 10
+        },
+        "execution_stats": {
+          "num_independent_runs": 100,
+          "average_single_run_time_seconds": 0.0005322175001492723,
+          "total_elapsed_time_seconds": 0.05322175001492724
+        },
+        "metrics": {
+          "target_energy": -3.729609272523578,
+          "success_probability": 1.0,
+          "time_to_solution_99_seconds": 0.0005322175001492723,
+          "tts_95_confidence_interval": [
+            0.0005276558463738184,
+            0.0005374062390765175
+          ],
+          "best_energy_found": -3.729609272523578,
+          "reference_gap": 0.0
+        }
+      },
+      "SB-dSB": {
+        "card_version": "1.0.0",
+        "metadata": {
+          "solver_id": "sb-dsb",
+          "solver_name": "SB-dSB",
+          "hardware": {
+            "cpu": "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+            "gpu": null,
+            "threads_allocated": 8
+          },
+          "parameters": {
+            "num_sweeps": 1000,
+            "num_reads": 1,
+            "dt": 0.5,
+            "c0": 0.5347478819909496
+          }
+        },
+        "benchmark_suite": {
+          "suite_name": "pqblocks-bifurcation-golden",
+          "instance_id": "brute_force_n5",
+          "num_variables": 5,
+          "num_edges": 10
+        },
+        "execution_stats": {
+          "num_independent_runs": 100,
+          "average_single_run_time_seconds": 0.0005550233589019626,
+          "total_elapsed_time_seconds": 0.055502335890196264
+        },
+        "metrics": {
+          "target_energy": -3.729609272523578,
+          "success_probability": 1.0,
+          "time_to_solution_99_seconds": 0.0005550233589019626,
+          "tts_95_confidence_interval": [
+            0.0005431954936066176,
+            0.0005684228617537883
+          ],
+          "best_energy_found": -3.729609272523578,
+          "reference_gap": 0.0
+        }
+      },
+      "Neal-SA": {
+        "card_version": "1.0.0",
+        "metadata": {
+          "solver_id": "neal-sa",
+          "solver_name": "Neal-SA",
+          "hardware": {
+            "cpu": "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+            "gpu": null,
+            "threads_allocated": 8
+          },
+          "parameters": {
+            "num_reads": 100,
+            "num_sweeps": 1000,
+            "beta_range": [
+              0.1,
+              5.0
+            ]
+          }
+        },
+        "benchmark_suite": {
+          "suite_name": "pqblocks-bifurcation-golden",
+          "instance_id": "brute_force_n5",
+          "num_variables": 5,
+          "num_edges": 10
+        },
+        "execution_stats": {
+          "num_independent_runs": 100,
+          "average_single_run_time_seconds": 0.0076224030402954664,
+          "total_elapsed_time_seconds": 0.7622403040295467
+        },
+        "metrics": {
+          "target_energy": -3.729609272523578,
+          "success_probability": 1.0,
+          "time_to_solution_99_seconds": 0.0076224030402954664,
+          "tts_95_confidence_interval": [
+            0.0075738777486330944,
+            0.007676287783469889
+          ],
+          "best_energy_found": -3.7296092725235774,
+          "reference_gap": 4.440892098500626e-16
+        }
+      },
+      "OpenJij-SQA": {
+        "card_version": "1.0.0",
+        "metadata": {
+          "solver_id": "openjij-sqa",
+          "solver_name": "OpenJij-SQA",
+          "hardware": {
+            "cpu": "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+            "gpu": null,
+            "threads_allocated": 8
+          },
+          "parameters": {
+            "num_reads": 100,
+            "trotter": 4,
+            "beta": 5.0,
+            "gamma": 1.0
+          }
+        },
+        "benchmark_suite": {
+          "suite_name": "pqblocks-bifurcation-golden",
+          "instance_id": "brute_force_n5",
+          "num_variables": 5,
+          "num_edges": 10
+        },
+        "execution_stats": {
+          "num_independent_runs": 100,
+          "average_single_run_time_seconds": 0.2980221411408274,
+          "total_elapsed_time_seconds": 29.802214114082744
+        },
+        "metrics": {
+          "target_energy": -3.729609272523578,
+          "success_probability": 1.0,
+          "time_to_solution_99_seconds": 0.2980221411408274,
+          "tts_95_confidence_interval": [
+            0.2845757092965359,
+            0.3155042468138126
+          ],
+          "best_energy_found": -3.7296092725235774,
+          "reference_gap": 4.440892098500626e-16
+        }
+      },
+      "MQLib": {
+        "card_version": "1.0.0",
+        "metadata": {
+          "solver_id": "mqlib",
+          "solver_name": "MQLib",
+          "hardware": {
+            "cpu": "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+            "gpu": null,
+            "threads_allocated": 8
+          },
+          "parameters": {
+            "timeout": 0.1,
+            "heuristic_name": "BURER2002"
+          }
+        },
+        "benchmark_suite": {
+          "suite_name": "pqblocks-bifurcation-golden",
+          "instance_id": "brute_force_n5",
+          "num_variables": 5,
+          "num_edges": 10
+        },
+        "execution_stats": {
+          "num_independent_runs": 100,
+          "average_single_run_time_seconds": 0.10184618197090459,
+          "total_elapsed_time_seconds": 10.184618197090458
+        },
+        "metrics": {
+          "target_energy": -3.729609272523578,
+          "success_probability": 1.0,
+          "time_to_solution_99_seconds": 0.10184618197090459,
+          "tts_95_confidence_interval": [
+            0.10180896052592289,
+            0.10188807145408646
+          ],
+          "best_energy_found": -3.7296092725235774,
+          "reference_gap": 4.440892098500626e-16
+        }
+      },
+      "CP-SAT": {
+        "card_version": "1.0.0",
+        "metadata": {
+          "solver_id": "cp-sat",
+          "solver_name": "CP-SAT",
+          "hardware": {
+            "cpu": "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+            "gpu": null,
+            "threads_allocated": 8
+          },
+          "parameters": {
+            "max_time": 0.1,
+            "num_workers": 4
+          }
+        },
+        "benchmark_suite": {
+          "suite_name": "pqblocks-bifurcation-golden",
+          "instance_id": "brute_force_n5",
+          "num_variables": 5,
+          "num_edges": 10
+        },
+        "execution_stats": {
+          "num_independent_runs": 100,
+          "average_single_run_time_seconds": 0.004166960859438404,
+          "total_elapsed_time_seconds": 0.41669608594384044
+        },
+        "metrics": {
+          "target_energy": -3.729609272523578,
+          "success_probability": 1.0,
+          "time_to_solution_99_seconds": 0.004166960859438404,
+          "tts_95_confidence_interval": [
+            0.0035045342381999946,
+            0.005434100772581587
+          ],
+          "best_energy_found": -3.7296092725235774,
+          "reference_gap": 4.440892098500626e-16
+        }
+      }
+    },
+    "brute_force_n6": {
+      "SB-bSB": {
+        "card_version": "1.0.0",
+        "metadata": {
+          "solver_id": "sb-bsb",
+          "solver_name": "SB-bSB",
+          "hardware": {
+            "cpu": "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+            "gpu": null,
+            "threads_allocated": 8
+          },
+          "parameters": {
+            "num_sweeps": 1000,
+            "num_reads": 1,
+            "dt": 0.5,
+            "c0": 0.5020655057087214
+          }
+        },
+        "benchmark_suite": {
+          "suite_name": "pqblocks-bifurcation-golden",
+          "instance_id": "brute_force_n6",
+          "num_variables": 6,
+          "num_edges": 15
+        },
+        "execution_stats": {
+          "num_independent_runs": 100,
+          "average_single_run_time_seconds": 0.0005976609990466386,
+          "total_elapsed_time_seconds": 0.05976609990466386
+        },
+        "metrics": {
+          "target_energy": -3.612751684211493,
+          "success_probability": 1.0,
+          "time_to_solution_99_seconds": 0.0005976609990466386,
+          "tts_95_confidence_interval": [
+            0.000594560515790363,
+            0.0006005811336799525
+          ],
+          "best_energy_found": -3.612751684211493,
+          "reference_gap": 0.0
+        }
+      },
+      "SB-dSB": {
+        "card_version": "1.0.0",
+        "metadata": {
+          "solver_id": "sb-dsb",
+          "solver_name": "SB-dSB",
+          "hardware": {
+            "cpu": "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+            "gpu": null,
+            "threads_allocated": 8
+          },
+          "parameters": {
+            "num_sweeps": 1000,
+            "num_reads": 1,
+            "dt": 0.5,
+            "c0": 0.5020655057087214
+          }
+        },
+        "benchmark_suite": {
+          "suite_name": "pqblocks-bifurcation-golden",
+          "instance_id": "brute_force_n6",
+          "num_variables": 6,
+          "num_edges": 15
+        },
+        "execution_stats": {
+          "num_independent_runs": 100,
+          "average_single_run_time_seconds": 0.0005848650078405626,
+          "total_elapsed_time_seconds": 0.05848650078405626
+        },
+        "metrics": {
+          "target_energy": -3.612751684211493,
+          "success_probability": 1.0,
+          "time_to_solution_99_seconds": 0.0005848650078405626,
+          "tts_95_confidence_interval": [
+            0.0005825559227523626,
+            0.0005872563761877245
+          ],
+          "best_energy_found": -3.612751684211493,
+          "reference_gap": 0.0
+        }
+      },
+      "Neal-SA": {
+        "card_version": "1.0.0",
+        "metadata": {
+          "solver_id": "neal-sa",
+          "solver_name": "Neal-SA",
+          "hardware": {
+            "cpu": "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+            "gpu": null,
+            "threads_allocated": 8
+          },
+          "parameters": {
+            "num_reads": 100,
+            "num_sweeps": 1000,
+            "beta_range": [
+              0.1,
+              5.0
+            ]
+          }
+        },
+        "benchmark_suite": {
+          "suite_name": "pqblocks-bifurcation-golden",
+          "instance_id": "brute_force_n6",
+          "num_variables": 6,
+          "num_edges": 15
+        },
+        "execution_stats": {
+          "num_independent_runs": 100,
+          "average_single_run_time_seconds": 0.010692780240497086,
+          "total_elapsed_time_seconds": 1.0692780240497086
+        },
+        "metrics": {
+          "target_energy": -3.612751684211493,
+          "success_probability": 1.0,
+          "time_to_solution_99_seconds": 0.010692780240497086,
+          "tts_95_confidence_interval": [
+            0.010655591818598622,
+            0.010731416877584707
+          ],
+          "best_energy_found": -3.6127516842114935,
+          "reference_gap": -4.440892098500626e-16
+        }
+      },
+      "OpenJij-SQA": {
+        "card_version": "1.0.0",
+        "metadata": {
+          "solver_id": "openjij-sqa",
+          "solver_name": "OpenJij-SQA",
+          "hardware": {
+            "cpu": "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+            "gpu": null,
+            "threads_allocated": 8
+          },
+          "parameters": {
+            "num_reads": 100,
+            "trotter": 4,
+            "beta": 5.0,
+            "gamma": 1.0
+          }
+        },
+        "benchmark_suite": {
+          "suite_name": "pqblocks-bifurcation-golden",
+          "instance_id": "brute_force_n6",
+          "num_variables": 6,
+          "num_edges": 15
+        },
+        "execution_stats": {
+          "num_independent_runs": 100,
+          "average_single_run_time_seconds": 0.33965715802973134,
+          "total_elapsed_time_seconds": 33.965715802973136
+        },
+        "metrics": {
+          "target_energy": -3.612751684211493,
+          "success_probability": 1.0,
+          "time_to_solution_99_seconds": 0.33965715802973134,
+          "tts_95_confidence_interval": [
+            0.32339184311014835,
+            0.36198984505979753
+          ],
+          "best_energy_found": -3.612751684211494,
+          "reference_gap": -8.881784197001252e-16
+        }
+      },
+      "MQLib": {
+        "card_version": "1.0.0",
+        "metadata": {
+          "solver_id": "mqlib",
+          "solver_name": "MQLib",
+          "hardware": {
+            "cpu": "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+            "gpu": null,
+            "threads_allocated": 8
+          },
+          "parameters": {
+            "timeout": 0.1,
+            "heuristic_name": "BURER2002"
+          }
+        },
+        "benchmark_suite": {
+          "suite_name": "pqblocks-bifurcation-golden",
+          "instance_id": "brute_force_n6",
+          "num_variables": 6,
+          "num_edges": 15
+        },
+        "execution_stats": {
+          "num_independent_runs": 100,
+          "average_single_run_time_seconds": 0.10194630284968298,
+          "total_elapsed_time_seconds": 10.194630284968298
+        },
+        "metrics": {
+          "target_energy": -3.612751684211493,
+          "success_probability": 0.0,
+          "time_to_solution_99_seconds": null,
+          "tts_95_confidence_interval": [
+            null,
+            null
+          ],
+          "best_energy_found": -2.205189613026812,
+          "reference_gap": 1.4075620711846812
+        }
+      },
+      "CP-SAT": {
+        "card_version": "1.0.0",
+        "metadata": {
+          "solver_id": "cp-sat",
+          "solver_name": "CP-SAT",
+          "hardware": {
+            "cpu": "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+            "gpu": null,
+            "threads_allocated": 8
+          },
+          "parameters": {
+            "max_time": 0.1,
+            "num_workers": 4
+          }
+        },
+        "benchmark_suite": {
+          "suite_name": "pqblocks-bifurcation-golden",
+          "instance_id": "brute_force_n6",
+          "num_variables": 6,
+          "num_edges": 15
+        },
+        "execution_stats": {
+          "num_independent_runs": 100,
+          "average_single_run_time_seconds": 0.00414658914116444,
+          "total_elapsed_time_seconds": 0.41465891411644407
+        },
+        "metrics": {
+          "target_energy": -3.612751684211493,
+          "success_probability": 1.0,
+          "time_to_solution_99_seconds": 0.00414658914116444,
+          "tts_95_confidence_interval": [
+            0.0040784623553045095,
+            0.00422125734090514
+          ],
+          "best_energy_found": -3.6127516842114935,
+          "reference_gap": -4.440892098500626e-16
+        }
+      }
+    },
+    "planted_n7": {
+      "SB-bSB": {
+        "card_version": "1.0.0",
+        "metadata": {
+          "solver_id": "sb-bsb",
+          "solver_name": "SB-bSB",
+          "hardware": {
+            "cpu": "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+            "gpu": null,
+            "threads_allocated": 8
+          },
+          "parameters": {
+            "num_sweeps": 1000,
+            "num_reads": 1,
+            "dt": 0.5,
+            "c0": 0.7182723112766563
+          }
+        },
+        "benchmark_suite": {
+          "suite_name": "pqblocks-bifurcation-golden",
+          "instance_id": "planted_n7",
+          "num_variables": 7,
+          "num_edges": 21
+        },
+        "execution_stats": {
+          "num_independent_runs": 100,
+          "average_single_run_time_seconds": 0.0006324990786379203,
+          "total_elapsed_time_seconds": 0.06324990786379203
+        },
+        "metrics": {
+          "target_energy": -4.078012743694824,
+          "success_probability": 1.0,
+          "time_to_solution_99_seconds": 0.0006324990786379203,
+          "tts_95_confidence_interval": [
+            0.0006297216818929882,
+            0.0006351607208707719
+          ],
+          "best_energy_found": -4.078012743694824,
+          "reference_gap": 0.0
+        }
+      },
+      "SB-dSB": {
+        "card_version": "1.0.0",
+        "metadata": {
+          "solver_id": "sb-dsb",
+          "solver_name": "SB-dSB",
+          "hardware": {
+            "cpu": "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+            "gpu": null,
+            "threads_allocated": 8
+          },
+          "parameters": {
+            "num_sweeps": 1000,
+            "num_reads": 1,
+            "dt": 0.5,
+            "c0": 0.7182723112766563
+          }
+        },
+        "benchmark_suite": {
+          "suite_name": "pqblocks-bifurcation-golden",
+          "instance_id": "planted_n7",
+          "num_variables": 7,
+          "num_edges": 21
+        },
+        "execution_stats": {
+          "num_independent_runs": 100,
+          "average_single_run_time_seconds": 0.000617274007818196,
+          "total_elapsed_time_seconds": 0.0617274007818196
+        },
+        "metrics": {
+          "target_energy": -4.078012743694824,
+          "success_probability": 1.0,
+          "time_to_solution_99_seconds": 0.000617274007818196,
+          "tts_95_confidence_interval": [
+            0.0006151413776242407,
+            0.0006193973703338997
+          ],
+          "best_energy_found": -4.078012743694824,
+          "reference_gap": 0.0
+        }
+      },
+      "Neal-SA": {
+        "card_version": "1.0.0",
+        "metadata": {
+          "solver_id": "neal-sa",
+          "solver_name": "Neal-SA",
+          "hardware": {
+            "cpu": "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+            "gpu": null,
+            "threads_allocated": 8
+          },
+          "parameters": {
+            "num_reads": 100,
+            "num_sweeps": 1000,
+            "beta_range": [
+              0.1,
+              5.0
+            ]
+          }
+        },
+        "benchmark_suite": {
+          "suite_name": "pqblocks-bifurcation-golden",
+          "instance_id": "planted_n7",
+          "num_variables": 7,
+          "num_edges": 21
+        },
+        "execution_stats": {
+          "num_independent_runs": 100,
+          "average_single_run_time_seconds": 0.012832578730303794,
+          "total_elapsed_time_seconds": 1.2832578730303794
+        },
+        "metrics": {
+          "target_energy": -4.078012743694824,
+          "success_probability": 1.0,
+          "time_to_solution_99_seconds": 0.012832578730303794,
+          "tts_95_confidence_interval": [
+            0.01277821889322513,
+            0.012895824844221353
+          ],
+          "best_energy_found": -4.078012743694826,
+          "reference_gap": -1.7763568394002505e-15
+        }
+      },
+      "OpenJij-SQA": {
+        "card_version": "1.0.0",
+        "metadata": {
+          "solver_id": "openjij-sqa",
+          "solver_name": "OpenJij-SQA",
+          "hardware": {
+            "cpu": "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+            "gpu": null,
+            "threads_allocated": 8
+          },
+          "parameters": {
+            "num_reads": 100,
+            "trotter": 4,
+            "beta": 5.0,
+            "gamma": 1.0
+          }
+        },
+        "benchmark_suite": {
+          "suite_name": "pqblocks-bifurcation-golden",
+          "instance_id": "planted_n7",
+          "num_variables": 7,
+          "num_edges": 21
+        },
+        "execution_stats": {
+          "num_independent_runs": 100,
+          "average_single_run_time_seconds": 0.33399166572955435,
+          "total_elapsed_time_seconds": 33.39916657295544
+        },
+        "metrics": {
+          "target_energy": -4.078012743694824,
+          "success_probability": 1.0,
+          "time_to_solution_99_seconds": 0.33399166572955435,
+          "tts_95_confidence_interval": [
+            0.3246169350318378,
+            0.3492100268683862
+          ],
+          "best_energy_found": -4.078012743694825,
+          "reference_gap": -8.881784197001252e-16
+        }
+      },
+      "MQLib": {
+        "card_version": "1.0.0",
+        "metadata": {
+          "solver_id": "mqlib",
+          "solver_name": "MQLib",
+          "hardware": {
+            "cpu": "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+            "gpu": null,
+            "threads_allocated": 8
+          },
+          "parameters": {
+            "timeout": 0.1,
+            "heuristic_name": "BURER2002"
+          }
+        },
+        "benchmark_suite": {
+          "suite_name": "pqblocks-bifurcation-golden",
+          "instance_id": "planted_n7",
+          "num_variables": 7,
+          "num_edges": 21
+        },
+        "execution_stats": {
+          "num_independent_runs": 100,
+          "average_single_run_time_seconds": 0.10195939696015557,
+          "total_elapsed_time_seconds": 10.195939696015557
+        },
+        "metrics": {
+          "target_energy": -4.078012743694824,
+          "success_probability": 1.0,
+          "time_to_solution_99_seconds": 0.10195939696015557,
+          "tts_95_confidence_interval": [
+            0.10192050522692445,
+            0.10200032991533227
+          ],
+          "best_energy_found": -4.078012743694825,
+          "reference_gap": -8.881784197001252e-16
+        }
+      },
+      "CP-SAT": {
+        "card_version": "1.0.0",
+        "metadata": {
+          "solver_id": "cp-sat",
+          "solver_name": "CP-SAT",
+          "hardware": {
+            "cpu": "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+            "gpu": null,
+            "threads_allocated": 8
+          },
+          "parameters": {
+            "max_time": 0.1,
+            "num_workers": 4
+          }
+        },
+        "benchmark_suite": {
+          "suite_name": "pqblocks-bifurcation-golden",
+          "instance_id": "planted_n7",
+          "num_variables": 7,
+          "num_edges": 21
+        },
+        "execution_stats": {
+          "num_independent_runs": 100,
+          "average_single_run_time_seconds": 0.004641424162255135,
+          "total_elapsed_time_seconds": 0.46414241622551344
+        },
+        "metrics": {
+          "target_energy": -4.078012743694824,
+          "success_probability": 1.0,
+          "time_to_solution_99_seconds": 0.004641424162255135,
+          "tts_95_confidence_interval": [
+            0.004571849378669867,
+            0.004716035335186461
+          ],
+          "best_energy_found": -4.078012743694825,
+          "reference_gap": -8.881784197001252e-16
+        }
+      }
+    },
+    "brute_force_n8": {
+      "SB-bSB": {
+        "card_version": "1.0.0",
+        "metadata": {
+          "solver_id": "sb-bsb",
+          "solver_name": "SB-bSB",
+          "hardware": {
+            "cpu": "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+            "gpu": null,
+            "threads_allocated": 8
+          },
+          "parameters": {
+            "num_sweeps": 1000,
+            "num_reads": 1,
+            "dt": 0.5,
+            "c0": 0.4472758705753901
+          }
+        },
+        "benchmark_suite": {
+          "suite_name": "pqblocks-bifurcation-golden",
+          "instance_id": "brute_force_n8",
+          "num_variables": 8,
+          "num_edges": 28
+        },
+        "execution_stats": {
+          "num_independent_runs": 100,
+          "average_single_run_time_seconds": 0.0006022482112166471,
+          "total_elapsed_time_seconds": 0.06022482112166472
+        },
+        "metrics": {
+          "target_energy": -5.82294403806175,
+          "success_probability": 0.0,
+          "time_to_solution_99_seconds": null,
+          "tts_95_confidence_interval": [
+            null,
+            null
+          ],
+          "best_energy_found": -5.761388679381071,
+          "reference_gap": 0.061555358680679184
+        }
+      },
+      "SB-dSB": {
+        "card_version": "1.0.0",
+        "metadata": {
+          "solver_id": "sb-dsb",
+          "solver_name": "SB-dSB",
+          "hardware": {
+            "cpu": "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+            "gpu": null,
+            "threads_allocated": 8
+          },
+          "parameters": {
+            "num_sweeps": 1000,
+            "num_reads": 1,
+            "dt": 0.5,
+            "c0": 0.4472758705753901
+          }
+        },
+        "benchmark_suite": {
+          "suite_name": "pqblocks-bifurcation-golden",
+          "instance_id": "brute_force_n8",
+          "num_variables": 8,
+          "num_edges": 28
+        },
+        "execution_stats": {
+          "num_independent_runs": 100,
+          "average_single_run_time_seconds": 0.0005980145311332307,
+          "total_elapsed_time_seconds": 0.05980145311332308
+        },
+        "metrics": {
+          "target_energy": -5.82294403806175,
+          "success_probability": 0.0,
+          "time_to_solution_99_seconds": null,
+          "tts_95_confidence_interval": [
+            null,
+            null
+          ],
+          "best_energy_found": -5.761388679381071,
+          "reference_gap": 0.061555358680679184
+        }
+      },
+      "Neal-SA": {
+        "card_version": "1.0.0",
+        "metadata": {
+          "solver_id": "neal-sa",
+          "solver_name": "Neal-SA",
+          "hardware": {
+            "cpu": "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+            "gpu": null,
+            "threads_allocated": 8
+          },
+          "parameters": {
+            "num_reads": 100,
+            "num_sweeps": 1000,
+            "beta_range": [
+              0.1,
+              5.0
+            ]
+          }
+        },
+        "benchmark_suite": {
+          "suite_name": "pqblocks-bifurcation-golden",
+          "instance_id": "brute_force_n8",
+          "num_variables": 8,
+          "num_edges": 28
+        },
+        "execution_stats": {
+          "num_independent_runs": 100,
+          "average_single_run_time_seconds": 0.01408805332990596,
+          "total_elapsed_time_seconds": 1.408805332990596
+        },
+        "metrics": {
+          "target_energy": -5.82294403806175,
+          "success_probability": 1.0,
+          "time_to_solution_99_seconds": 0.01408805332990596,
+          "tts_95_confidence_interval": [
+            0.01404477071295696,
+            0.014135562606643361
+          ],
+          "best_energy_found": -5.822944038061751,
+          "reference_gap": -8.881784197001252e-16
+        }
+      },
+      "OpenJij-SQA": {
+        "card_version": "1.0.0",
+        "metadata": {
+          "solver_id": "openjij-sqa",
+          "solver_name": "OpenJij-SQA",
+          "hardware": {
+            "cpu": "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+            "gpu": null,
+            "threads_allocated": 8
+          },
+          "parameters": {
+            "num_reads": 100,
+            "trotter": 4,
+            "beta": 5.0,
+            "gamma": 1.0
+          }
+        },
+        "benchmark_suite": {
+          "suite_name": "pqblocks-bifurcation-golden",
+          "instance_id": "brute_force_n8",
+          "num_variables": 8,
+          "num_edges": 28
+        },
+        "execution_stats": {
+          "num_independent_runs": 100,
+          "average_single_run_time_seconds": 0.35460215591068844,
+          "total_elapsed_time_seconds": 35.460215591068845
+        },
+        "metrics": {
+          "target_energy": -5.82294403806175,
+          "success_probability": 1.0,
+          "time_to_solution_99_seconds": 0.35460215591068844,
+          "tts_95_confidence_interval": [
+            0.33847913965248155,
+            0.3762775833780179
+          ],
+          "best_energy_found": -5.82294403806175,
+          "reference_gap": 0.0
+        }
+      },
+      "MQLib": {
+        "card_version": "1.0.0",
+        "metadata": {
+          "solver_id": "mqlib",
+          "solver_name": "MQLib",
+          "hardware": {
+            "cpu": "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+            "gpu": null,
+            "threads_allocated": 8
+          },
+          "parameters": {
+            "timeout": 0.1,
+            "heuristic_name": "BURER2002"
+          }
+        },
+        "benchmark_suite": {
+          "suite_name": "pqblocks-bifurcation-golden",
+          "instance_id": "brute_force_n8",
+          "num_variables": 8,
+          "num_edges": 28
+        },
+        "execution_stats": {
+          "num_independent_runs": 100,
+          "average_single_run_time_seconds": 0.10199327217938844,
+          "total_elapsed_time_seconds": 10.199327217938844
+        },
+        "metrics": {
+          "target_energy": -5.82294403806175,
+          "success_probability": 0.0,
+          "time_to_solution_99_seconds": null,
+          "tts_95_confidence_interval": [
+            null,
+            null
+          ],
+          "best_energy_found": -3.4093370819244893,
+          "reference_gap": 2.4136069561372606
+        }
+      },
+      "CP-SAT": {
+        "card_version": "1.0.0",
+        "metadata": {
+          "solver_id": "cp-sat",
+          "solver_name": "CP-SAT",
+          "hardware": {
+            "cpu": "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+            "gpu": null,
+            "threads_allocated": 8
+          },
+          "parameters": {
+            "max_time": 0.1,
+            "num_workers": 4
+          }
+        },
+        "benchmark_suite": {
+          "suite_name": "pqblocks-bifurcation-golden",
+          "instance_id": "brute_force_n8",
+          "num_variables": 8,
+          "num_edges": 28
+        },
+        "execution_stats": {
+          "num_independent_runs": 100,
+          "average_single_run_time_seconds": 0.0054704985884018245,
+          "total_elapsed_time_seconds": 0.5470498588401824
+        },
+        "metrics": {
+          "target_energy": -5.82294403806175,
+          "success_probability": 1.0,
+          "time_to_solution_99_seconds": 0.0054704985884018245,
+          "tts_95_confidence_interval": [
+            0.0053930915762248335,
+            0.005556317084025067
+          ],
+          "best_energy_found": -5.822944038061751,
+          "reference_gap": -8.881784197001252e-16
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "pqblocks-bifurcation"
+version: "0.1.0"
+license: Apache-2.0
+repository-code: "https://github.com/PQBlocks/simulated-bifurcation"
+authors:
+  - name: "The PQBlocks Authors"
+keywords:
+  - simulated-bifurcation
+  - ising
+  - qubo
+  - combinatorial-optimization
+  - quantum-inspired
+  - heuristic
+  - max-cut
+  - numba
+abstract: "Simulated Bifurcation (ballistic and discrete) heuristic solver for Ising and QUBO problems. Quantum-inspired classical optimization, not cryptography."
