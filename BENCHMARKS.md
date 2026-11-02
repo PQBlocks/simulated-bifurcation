@@ -76,4 +76,34 @@ On this dense 8-spin instance both SB variants settle in a local minimum 1.06 % 
 
 ## Reproducing
 
-The benchmark driver uses the shared harness `pqblocks-qubo-bench` and the baseline solvers (dwave-neal, openjij, ortools for CP-SAT, and the MQLib binary). A one-command reproduction script will be added here when `pqblocks-qubo-bench` is published. Until then the raw results above, and in `benchmarks/benchmark-card.json`, are the record.
+The benchmark driver uses the shared harness `pqblocks-qubo-bench` and baseline solvers (`dwave-neal`, `openjij`, `ortools` for CP-SAT).
+
+To reproduce the benchmark comparisons on your machine:
+
+```bash
+python3 -c "
+import numpy as np
+from pqblocks_bifurcation.solver import SimulatedBifurcationSampler
+from pqblocks_qubo_bench.gap import calculate_gap
+
+# 4-spin frustrated ring
+h = np.zeros(4)
+J = np.array([
+    [0.0, 1.0, 0.0, 1.0],
+    [1.0, 0.0, 1.0, 0.0],
+    [0.0, 1.0, 0.0, 1.0],
+    [1.0, 0.0, 1.0, 0.0]
+])
+E_opt = -4.0
+
+sampler_b = SimulatedBifurcationSampler(seed=42, mode='bSB')
+spins_b, energy_b = sampler_b.sample_ising(J, h)
+gap_b = calculate_gap(energy_b, E_opt)
+print(f'bSB found energy: {energy_b:.1f} (gap vs opt: {gap_b:.4f})')
+
+sampler_d = SimulatedBifurcationSampler(seed=42, mode='dSB')
+spins_d, energy_d = sampler_d.sample_ising(J, h)
+gap_d = calculate_gap(energy_d, E_opt)
+print(f'dSB found energy: {energy_d:.1f} (gap vs opt: {gap_d:.4f})')
+"
+```
